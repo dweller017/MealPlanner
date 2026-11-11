@@ -1,0 +1,23 @@
+<resources>
+    <!-- colours for the dark theme -->
+    <style name="Base.Theme.ProjectInz" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_primary_dark</item>
+        <item name="colorOnPrimary">@color/green_on_primary_dark</item>
+        <item name="colorPrimaryContainer">@color/green_primary_container_dark</item>
+        <item name="colorOnPrimaryContainer">@color/green_on_primary_container_dark</item>
+        <item name="colorSecondary">@color/orange_secondary_dark</item>
+        <item name="colorSecondaryContainer">@color/dark_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/dark_on_secondary_container</item>
+        <item name="android:colorBackground">@color/dark_surface</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+        <item name="colorSurfaceVariant">@color/dark_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/dark_on_surface_variant</item>
+        <item name="colorOutline">@color/dark_outline</item>
+        <item name="colorSurfaceContainerLowest">@color/dark_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/dark_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/dark_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/dark_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/dark_surface_container_highest</item>
+    </style>
+</resources>

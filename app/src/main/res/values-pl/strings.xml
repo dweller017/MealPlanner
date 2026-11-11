@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Polish texts (every key must also be in values/strings.xml) -->
+<resources>
+    <string name="app_name">Planer posiłków</string>
+
+    <!-- Common -->
+    <string name="action_save">Zapisz</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="action_delete">Usuń</string>
+    <string name="action_edit">Edytuj</string>
+    <string name="error_generic">Coś poszło nie tak. Spróbuj ponownie.</string>
+    <string name="error_network">Brak połączenia. Zmiany są zapisywane na urządzeniu i zostaną zsynchronizowane po odzyskaniu połączenia.</string>
+
+    <!-- Measurement units -->
+    <string name="unit_g">g</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_ml">ml</string>
+    <string name="unit_l">l</string>
+    <string name="unit_pcs">szt.</string>
+    <string name="label_unit">Jednostka</string>
+
+    <!-- Validation -->
+    <string name="error_required">To pole jest wymagane</string>
+    <string name="error_invalid_email">Podaj poprawny adres e-mail</string>
+    <plurals name="error_password_too_short">
+        <item quantity="one">Hasło musi mieć co najmniej %d znak</item>
+        <item quantity="few">Hasło musi mieć co najmniej %d znaki</item>
+        <item quantity="many">Hasło musi mieć co najmniej %d znaków</item>
+        <item quantity="other">Hasło musi mieć co najmniej %d znaku</item>
+    </plurals>
+    <string name="error_passwords_not_matching">Hasła nie są takie same</string>
+    <string name="error_portions_invalid">Podaj liczbę całkowitą od 1 do %1$d</string>
+    <string name="error_quantity_invalid">Podaj liczbę większą od 0 (maks. %1$d)</string>
+    <string name="error_unit_required">Wybierz jednostkę</string>
+
+    <!-- Settings / language -->
+    <string name="title_settings">Ustawienia</string>
+    <string name="label_language">Język</string>
+    <string name="language_english">English</string>
+    <string name="language_polish">Polski</string>
+
+    <!-- Authentication -->
+    <string name="title_login">Zaloguj się na swoje konto</string>
+    <string name="title_register">Załóż konto</string>
+    <string name="hint_name">Imię</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Hasło</string>
+    <string name="hint_password_repeat">Powtórz hasło</string>
+    <string name="action_login">Zaloguj</string>
+    <string name="action_register">Zarejestruj</string>
+    <string name="action_go_to_register">Nie masz konta? Zarejestruj się</string>
+    <string name="action_logout">Wyloguj</string>
+    <string name="logout_confirm">Czy chcesz się wylogować?</string>
+    <string name="label_account">Konto</string>
+    <string name="error_auth_invalid_credentials">Nieprawidłowy e-mail lub hasło</string>
+    <string name="error_auth_email_in_use">Konto z tym adresem e-mail już istnieje</string>
+    <string name="error_auth_weak_password">Hasło jest zbyt słabe</string>
+    <string name="error_auth_network">Brak połączenia z internetem</string>
+    <string name="error_auth_too_many_requests">Zbyt wiele prób. Spróbuj ponownie później.</string>
+
+    <!-- Main screen / navigation -->
+    <string name="nav_home">Start</string>
+    <string name="nav_recipes">Przepisy</string>
+    <string name="nav_planner">Planer</string>
+    <string name="nav_shopping">Zakupy</string>
+    <string name="home_welcome">Cześć, %1$s!</string>
+    <string name="home_subtitle">Zaplanuj posiłki, a aplikacja przygotuje listę zakupów.</string>
+    <string name="home_go_recipes">Moje przepisy</string>
+    <string name="home_go_planner">Planer posiłków</string>
+    <string name="home_go_shopping">Lista zakupów</string>
+
+    <!-- Recipes -->
+    <string name="title_add_recipe">Nowy przepis</string>
+    <string name="title_edit_recipe">Edytuj przepis</string>
+    <string name="title_recipe_details">Przepis</string>
+    <string name="hint_search_recipes">Szukaj po nazwie, kategorii lub składniku</string>
+    <string name="filter_favourites">Ulubione</string>
+    <string name="recipes_empty">Nie masz jeszcze przepisów.\nDotknij +, aby dodać pierwszy przepis.</string>
+    <string name="recipes_no_results">Żaden przepis nie pasuje do wyszukiwania.</string>
+    <string name="hint_recipe_name">Nazwa przepisu</string>
+    <string name="hint_default_portions">Porcje</string>
+    <string name="hint_category">Kategoria (opcjonalnie)</string>
+    <string name="hint_description">Opis / przygotowanie</string>
+    <string name="label_ingredients">Składniki</string>
+    <string name="label_portions">Porcje</string>
+    <string name="hint_ingredient_name">Składnik</string>
+    <string name="hint_quantity">Ilość</string>
+    <string name="action_add_ingredient">Dodaj składnik</string>
+    <string name="action_remove_ingredient">Usuń składnik</string>
+    <string name="action_favourite">Ulubiony</string>
+    <string name="action_fewer_portions">Mniej porcji</string>
+    <string name="action_more_portions">Więcej porcji</string>
+    <string name="error_no_ingredients">Dodaj co najmniej jeden składnik</string>
+    <string name="error_save_failed">Nie udało się zapisać zmian. Spróbuj ponownie.</string>
+    <string name="delete_recipe_title">Usunąć przepis?</string>
+    <string name="delete_recipe_message">„%1$s” oraz wszystkie zaplanowane z nim posiłki zostaną trwale usunięte.</string>
+
+    <!-- Polish plurals: one (1), few (2-4, 22-24...), many (5-21, 25...) -->
+    <plurals name="portions_count">
+        <item quantity="one">%d porcja</item>
+        <item quantity="few">%d porcje</item>
+        <item quantity="many">%d porcji</item>
+        <item quantity="other">%d porcji</item>
+    </plurals>
+    <plurals name="ingredients_count">
+        <item quantity="one">%d składnik</item>
+        <item quantity="few">%d składniki</item>
+        <item quantity="many">%d składników</item>
+        <item quantity="other">%d składników</item>
+    </plurals>
+    <plurals name="recipe_is_for_portions">
+        <item quantity="one">Przepis jest na %d porcję</item>
+        <item quantity="few">Przepis jest na %d porcje</item>
+        <item quantity="many">Przepis jest na %d porcji</item>
+        <item quantity="other">Przepis jest na %d porcji</item>
+    </plurals>
+
+    <string-array name="recipe_categories">
+        <item>Śniadanie</item>
+        <item>Obiad</item>
+        <item>Kolacja</item>
+        <item>Zupa</item>
+        <item>Sałatka</item>
+        <item>Deser</item>
+        <item>Przekąska</item>
+    </string-array>
+
+    <!-- Meal planner -->
+    <string name="title_add_planned_meal">Zaplanuj posiłek</string>
+    <string name="title_edit_planned_meal">Edytuj zaplanowany posiłek</string>
+    <string name="action_plan_meal">Zaplanuj ten posiłek</string>
+    <string name="action_previous_week">Poprzedni tydzień</string>
+    <string name="action_next_week">Następny tydzień</string>
+    <string name="action_this_week">Przejdź do bieżącego tygodnia</string>
+    <string name="planner_week_range">%1$s – %2$s</string>
+    <string name="planner_today">dzisiaj</string>
+    <string name="planner_no_meals">Brak zaplanowanych posiłków</string>
+    <string name="planner_pick_date">Wybierz datę</string>
+    <string name="planner_no_recipes">Nie masz jeszcze przepisów. Najpierw dodaj przepis.</string>
+    <string name="hint_date">Data</string>
+    <string name="hint_recipe">Przepis</string>
+    <string name="hint_planned_portions">Liczba porcji do przygotowania</string>
+    <string name="error_recipe_required">Wybierz przepis</string>
+    <string name="delete_meal_title">Usunąć zaplanowany posiłek?</string>
+    <string name="delete_meal_message">„%1$s” zostanie usunięty z planera.</string>
+
+    <!-- Shopping list -->
+    <string name="action_generate_list">Generuj z planu</string>
+    <string name="action_clear_purchased">Usuń kupione</string>
+    <string name="action_mark_purchased">Kupione</string>
+    <string name="action_undo">Cofnij</string>
+    <string name="title_add_product">Dodaj produkt</string>
+    <string name="title_edit_product">Edytuj produkt</string>
+    <string name="hint_product_name">Produkt</string>
+    <string name="unit_none">—</string>
+    <string name="shopping_empty">Lista zakupów jest pusta.\nWygeneruj ją z planu posiłków lub dodaj produkty przyciskiem +.</string>
+    <string name="shopping_pick_range">Wybierz okres, na który robisz zakupy</string>
+    <string name="shopping_no_meals_in_range">Brak zaplanowanych posiłków między %1$s a %2$s.</string>
+    <string name="shopping_nothing_purchased">Żaden produkt nie jest oznaczony jako kupiony.</string>
+    <string name="shopping_source_generated">z planu posiłków</string>
+    <string name="shopping_source_manual">dodany ręcznie</string>
+    <string name="shopping_item_details">%1$s • %2$s</string>
+    <string name="shopping_category_other">Inne</string>
+    <string name="shopping_item_deleted">Usunięto „%1$s”</string>
+    <string name="shopping_generated_edit_hint">Ten produkt pochodzi z planu posiłków. Po zmianie planu zostanie przeliczony, a Twoje zmiany zastąpione.</string>
+
+    <plurals name="shopping_generated_products">
+        <item quantity="one">Wygenerowano %d produkt</item>
+        <item quantity="few">Wygenerowano %d produkty</item>
+        <item quantity="many">Wygenerowano %d produktów</item>
+        <item quantity="other">Wygenerowano %d produktu</item>
+    </plurals>
+    <plurals name="shopping_generated_meals">
+        <item quantity="one">z %d zaplanowanego posiłku.</item>
+        <item quantity="few">z %d zaplanowanych posiłków.</item>
+        <item quantity="many">z %d zaplanowanych posiłków.</item>
+        <item quantity="other">z %d zaplanowanych posiłków.</item>
+    </plurals>
+    <plurals name="shopping_skipped_meals">
+        <item quantity="one">Pominięto %d posiłek, ponieważ jego przepis już nie istnieje.</item>
+        <item quantity="few">Pominięto %d posiłki, ponieważ ich przepisy już nie istnieją.</item>
+        <item quantity="many">Pominięto %d posiłków, ponieważ ich przepisy już nie istnieją.</item>
+        <item quantity="other">Pominięto %d posiłku, ponieważ ich przepisy już nie istnieją.</item>
+    </plurals>
+    <plurals name="shopping_clear_purchased_message">
+        <item quantity="one">Usunąć %d kupiony produkt z listy?</item>
+        <item quantity="few">Usunąć %d kupione produkty z listy?</item>
+        <item quantity="many">Usunąć %d kupionych produktów z listy?</item>
+        <item quantity="other">Usunąć %d kupionego produktu z listy?</item>
+    </plurals>
+
+    <string-array name="shopping_categories">
+        <item>Warzywa i owoce</item>
+        <item>Mięso i ryby</item>
+        <item>Nabiał i jajka</item>
+        <item>Pieczywo</item>
+        <item>Produkty suche</item>
+        <item>Przyprawy i sosy</item>
+        <item>Mrożonki</item>
+        <item>Napoje</item>
+        <item>Chemia domowa</item>
+    </string-array>
+    <string name="shopping_range_info">Lista na %1$s – %2$s • aktualizuje się automatycznie po zmianie planu posiłków</string>
+    <string name="shopping_updated_from_plan">Lista zakupów została zaktualizowana zgodnie z planem posiłków.</string>
+
+    <!-- Unsaved changes -->
+    <string name="discard_changes_title">Odrzucić zmiany?</string>
+    <string name="discard_changes_message">Masz niezapisane zmiany. Jeśli wyjdziesz teraz, zostaną utracone.</string>
+    <string name="action_discard">Odrzuć</string>
+    <string name="action_keep_editing">Edytuj dalej</string>
+    <string name="home_today_title">Dzisiaj</string>
+    <string name="home_no_meals_today">Na dziś nic nie zaplanowano.</string>
+
+    <!-- Theme -->
+    <string name="label_theme">Motyw</string>
+    <string name="theme_system">Zgodny z systemem</string>
+    <string name="theme_light">Jasny</string>
+    <string name="theme_dark">Ciemny</string>
+
+    <!-- Forgot password -->
+    <string name="action_forgot_password">Nie pamiętasz hasła?</string>
+    <string name="title_forgot_password">Resetowanie hasła</string>
+    <string name="forgot_password_info">Podaj adres e-mail użyty przy rejestracji. Wyślemy Ci link do ustawienia nowego hasła.</string>
+    <string name="action_send_link">Wyślij link</string>
+    <string name="action_ok">OK</string>
+    <string name="reset_email_sent_title">Sprawdź skrzynkę e-mail</string>
+    <string name="reset_email_sent_message">Jeśli istnieje konto dla adresu %1$s, wysłaliśmy link do zresetowania hasła. Sprawdź też folder spam.</string>
+</resources>

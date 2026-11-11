@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- green colours for the light and dark theme -->
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- light theme -->
+    <color name="green_primary">#2E7D32</color>
+    <color name="green_primary_container">#B9F0B8</color>
+    <color name="green_on_primary_container">#002204</color>
+    <color name="orange_secondary">#E65100</color>
+    <color name="light_secondary_container">#D7E8CD</color>
+    <color name="light_on_secondary_container">#121F0E</color>
+    <color name="light_surface">#F8FAF0</color>
+    <color name="light_on_surface">#191D17</color>
+    <color name="light_surface_variant">#DEE5D8</color>
+    <color name="light_on_surface_variant">#424940</color>
+    <color name="light_outline">#72796F</color>
+    <color name="light_surface_container_lowest">#FFFFFF</color>
+    <color name="light_surface_container_low">#F2F5EA</color>
+    <color name="light_surface_container">#ECEFE4</color>
+    <color name="light_surface_container_high">#E6E9DF</color>
+    <color name="light_surface_container_highest">#E1E4D9</color>
+
+    <!-- dark theme -->
+    <color name="green_primary_dark">#9DD49D</color>
+    <color name="green_on_primary_dark">#00390A</color>
+    <color name="green_primary_container_dark">#1B5E20</color>
+    <color name="green_on_primary_container_dark">#B9F0B8</color>
+    <color name="orange_secondary_dark">#FFB68E</color>
+    <color name="dark_secondary_container">#3B4B37</color>
+    <color name="dark_on_secondary_container">#D7E8CD</color>
+    <color name="dark_surface">#11140F</color>
+    <color name="dark_on_surface">#E1E4D9</color>
+    <color name="dark_surface_variant">#424940</color>
+    <color name="dark_on_surface_variant">#C2C9BD</color>
+    <color name="dark_outline">#8C9388</color>
+    <color name="dark_surface_container_lowest">#0C0F0A</color>
+    <color name="dark_surface_container_low">#191D17</color>
+    <color name="dark_surface_container">#1D211B</color>
+    <color name="dark_surface_container_high">#272B25</color>
+    <color name="dark_surface_container_highest">#323630</color>
+</resources>

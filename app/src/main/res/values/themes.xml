@@ -1,0 +1,25 @@
+<resources>
+    <!-- app theme (light), no action bar because every screen has its own toolbar -->
+    <style name="Base.Theme.ProjectInz" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/green_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/green_on_primary_container</item>
+        <item name="colorSecondary">@color/orange_secondary</item>
+        <item name="colorSecondaryContainer">@color/light_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/light_on_secondary_container</item>
+        <item name="android:colorBackground">@color/light_surface</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+        <item name="colorSurfaceVariant">@color/light_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/light_on_surface_variant</item>
+        <item name="colorOutline">@color/light_outline</item>
+        <item name="colorSurfaceContainerLowest">@color/light_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/light_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/light_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/light_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/light_surface_container_highest</item>
+    </style>
+
+    <style name="Theme.ProjectInz" parent="Base.Theme.ProjectInz" />
+</resources>
