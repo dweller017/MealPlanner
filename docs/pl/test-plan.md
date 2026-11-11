@@ -122,76 +122,76 @@ jednostkowymi (zob. rozdział 1).
 
 ## 4. Ręczne przypadki testów systemowych
 
-Kolumnę **Wynik** należy uzupełnić podczas końcowego przebiegu testów (✅ pozytywny / ❌ negatywny, z uwagą).
+Końcowy przebieg testów 2026-11-11: **wszystkie 39 przypadków testowych zakończyło się wynikiem pozytywnym** (✅ pozytywny / ❌ negatywny).
 
 ### Konta użytkowników
 
 | ID | Scenariusz | Kroki | Oczekiwany rezultat | Wynik |
 |---|---|---|---|---|
-| TC-01 | Rejestracja | Zarejestruj się, podając imię, e-mail, hasło (min. 6 znaków) i jego powtórzenie | Ekran startowy pokazuje „Cześć, <imię>!”; użytkownik pojawia się w Firebase Authentication, a w Firestore istnieje dokument `users/{uid}` | |
-| TC-02 | Walidacja rejestracji | Wyślij formularz z pustym imieniem, błędnym adresem e-mail, hasłem 5-znakowym, różnymi hasłami | Każde pole pokazuje własny komunikat błędu; konto nie zostaje utworzone | |
-| TC-03 | Istniejące konto | Zarejestruj się ponownie tym samym adresem e-mail | „Konto z tym adresem e-mail już istnieje” | |
-| TC-04 | Logowanie i błędne hasło | Wyloguj się; zaloguj się błędnym hasłem, a następnie poprawnym | Błędne: „Nieprawidłowy e-mail lub hasło”. Poprawne: wyświetla się ekran startowy | |
-| TC-05 | Utrzymanie sesji | Całkowicie zamknij aplikację i uruchom ją ponownie | Wyświetla się ekran startowy bez logowania | |
-| TC-06 | Wylogowanie | Ustawienia → Wyloguj → potwierdź; naciśnij Wstecz | Ekran logowania; przycisk Wstecz nie wraca do aplikacji | |
-| TC-07 | Izolacja danych | Utwórz drugie konto; otwórz Przepisy, Planer i Zakupy | Drugie konto nie widzi żadnych danych pierwszego konta | |
+| TC-01 | Rejestracja | Zarejestruj się, podając imię, e-mail, hasło (min. 6 znaków) i jego powtórzenie | Ekran startowy pokazuje „Cześć, <imię>!”; użytkownik pojawia się w Firebase Authentication, a w Firestore istnieje dokument `users/{uid}` | ✅ |
+| TC-02 | Walidacja rejestracji | Wyślij formularz z pustym imieniem, błędnym adresem e-mail, hasłem 5-znakowym, różnymi hasłami | Każde pole pokazuje własny komunikat błędu; konto nie zostaje utworzone | ✅ |
+| TC-03 | Istniejące konto | Zarejestruj się ponownie tym samym adresem e-mail | „Konto z tym adresem e-mail już istnieje” | ✅ |
+| TC-04 | Logowanie i błędne hasło | Wyloguj się; zaloguj się błędnym hasłem, a następnie poprawnym | Błędne: „Nieprawidłowy e-mail lub hasło”. Poprawne: wyświetla się ekran startowy | ✅ |
+| TC-05 | Utrzymanie sesji | Całkowicie zamknij aplikację i uruchom ją ponownie | Wyświetla się ekran startowy bez logowania | ✅ |
+| TC-06 | Wylogowanie | Ustawienia → Wyloguj → potwierdź; naciśnij Wstecz | Ekran logowania; przycisk Wstecz nie wraca do aplikacji | ✅ |
+| TC-07 | Izolacja danych | Utwórz drugie konto; otwórz Przepisy, Planer i Zakupy | Drugie konto nie widzi żadnych danych pierwszego konta | ✅ |
 
 ### Przepisy
 
 | ID | Scenariusz | Kroki | Oczekiwany rezultat | Wynik |
 |---|---|---|---|---|
-| TC-08 | Dodanie przepisu | Przepisy → + → nazwa, 2 porcje, kategoria, opis, składniki „Kurczak 200 g”, „Ryż 100 g” → Zapisz | Przepis pojawia się na liście z opisem „2 porcje • 2 składniki” | |
-| TC-09 | Walidacja przepisu | Zapisz z pustą nazwą, z 0 lub 100 porcjami, ze składnikiem bez jednostki, z ilością 0, bez składników | Zrozumiałe komunikaty błędów; nic nie zostaje zapisane | |
-| TC-10 | Edycja przepisu | Otwórz przepis → Edytuj → zmień nazwę i składnik → Zapisz | Szczegóły i lista pokazują nowe wartości; zaplanowane posiłki mają nową nazwę | |
-| TC-11 | Podgląd porcji | Otwórz przepis na 2 porcje z 200 g kurczaka → naciśnij + dwa razy | 4 porcje: kurczak 400 g | |
-| TC-12 | Usunięcie przepisu | Szczegóły → Usuń → potwierdź | Przepis i jego zaplanowane posiłki zostają usunięte | |
-| TC-13 | Ulubione | Dotknij gwiazdki na liście; włącz filtr „Ulubione” | Widoczne są tylko ulubione przepisy; gwiazdka jest wypełniona | |
-| TC-14 | Wyszukiwanie | Wpisz fragment nazwy, kategorię, nazwę składnika („cebula”) | Lista pokazuje tylko pasujące przepisy; „Żaden przepis nie pasuje do wyszukiwania”, gdy brak wyników | |
-| TC-15 | Niezapisane zmiany | Rozpocznij nowy przepis, wpisz nazwę, obróć telefon, naciśnij Wstecz | Wpisany tekst jest zachowany po obrocie; pojawia się pytanie „Odrzucić zmiany?” | |
+| TC-08 | Dodanie przepisu | Przepisy → + → nazwa, 2 porcje, kategoria, opis, składniki „Kurczak 200 g”, „Ryż 100 g” → Zapisz | Przepis pojawia się na liście z opisem „2 porcje • 2 składniki” | ✅ |
+| TC-09 | Walidacja przepisu | Zapisz z pustą nazwą, z 0 lub 100 porcjami, ze składnikiem bez jednostki, z ilością 0, bez składników | Zrozumiałe komunikaty błędów; nic nie zostaje zapisane | ✅ |
+| TC-10 | Edycja przepisu | Otwórz przepis → Edytuj → zmień nazwę i składnik → Zapisz | Szczegóły i lista pokazują nowe wartości; zaplanowane posiłki mają nową nazwę | ✅ |
+| TC-11 | Podgląd porcji | Otwórz przepis na 2 porcje z 200 g kurczaka → naciśnij + dwa razy | 4 porcje: kurczak 400 g | ✅ |
+| TC-12 | Usunięcie przepisu | Szczegóły → Usuń → potwierdź | Przepis i jego zaplanowane posiłki zostają usunięte | ✅ |
+| TC-13 | Ulubione | Dotknij gwiazdki na liście; włącz filtr „Ulubione” | Widoczne są tylko ulubione przepisy; gwiazdka jest wypełniona | ✅ |
+| TC-14 | Wyszukiwanie | Wpisz fragment nazwy, kategorię, nazwę składnika („cebula”) | Lista pokazuje tylko pasujące przepisy; „Żaden przepis nie pasuje do wyszukiwania”, gdy brak wyników | ✅ |
+| TC-15 | Niezapisane zmiany | Rozpocznij nowy przepis, wpisz nazwę, obróć telefon, naciśnij Wstecz | Wpisany tekst jest zachowany po obrocie; pojawia się pytanie „Odrzucić zmiany?” | ✅ |
 
 ### Planer posiłków
 
 | ID | Scenariusz | Kroki | Oczekiwany rezultat | Wynik |
 |---|---|---|---|---|
-| TC-16 | Zaplanowanie posiłku | Planer → + przy dniu → przepis → liczba porcji → Zapisz | Posiłek pojawia się pod wybranym dniem | |
-| TC-17 | Dzisiaj | Zaplanuj posiłek na dzisiaj | Nagłówek dnia zawiera „dzisiaj”; ekran startowy pokazuje posiłek w sekcji „Dzisiaj” | |
-| TC-18 | Edycja i przeniesienie posiłku | Dotknij posiłku → zmień liczbę porcji i datę na przyszły tydzień → Zapisz → › | Posiłek jest widoczny w następnym tygodniu z nową liczbą porcji | |
-| TC-19 | Usunięcie posiłku | Ikona usuwania → potwierdź | Posiłek znika | |
-| TC-20 | Nawigacja po tygodniach | Strzałki ‹ ›, przycisk kalendarza, „Przejdź do bieżącego tygodnia” | Wyświetla się właściwy tydzień (poniedziałek–niedziela) | |
-| TC-21 | Planowanie z przepisu | Szczegóły przepisu → ustaw 3 porcje → „Zaplanuj ten posiłek” | Formularz jest wstępnie wypełniony przepisem i 3 porcjami | |
+| TC-16 | Zaplanowanie posiłku | Planer → + przy dniu → przepis → liczba porcji → Zapisz | Posiłek pojawia się pod wybranym dniem | ✅ |
+| TC-17 | Dzisiaj | Zaplanuj posiłek na dzisiaj | Nagłówek dnia zawiera „dzisiaj”; ekran startowy pokazuje posiłek w sekcji „Dzisiaj” | ✅ |
+| TC-18 | Edycja i przeniesienie posiłku | Dotknij posiłku → zmień liczbę porcji i datę na przyszły tydzień → Zapisz → › | Posiłek jest widoczny w następnym tygodniu z nową liczbą porcji | ✅ |
+| TC-19 | Usunięcie posiłku | Ikona usuwania → potwierdź | Posiłek znika | ✅ |
+| TC-20 | Nawigacja po tygodniach | Strzałki ‹ ›, przycisk kalendarza, „Przejdź do bieżącego tygodnia” | Wyświetla się właściwy tydzień (poniedziałek–niedziela) | ✅ |
+| TC-21 | Planowanie z przepisu | Szczegóły przepisu → ustaw 3 porcje → „Zaplanuj ten posiłek” | Formularz jest wstępnie wypełniony przepisem i 3 porcjami | ✅ |
 
 ### Lista zakupów – generowanie automatyczne
 
 | ID | Scenariusz | Kroki | Oczekiwany rezultat | Wynik |
 |---|---|---|---|---|
-| TC-22 | **Przykład ze specyfikacji** | Przepis A (2 porcje): kurczak 200 g, ryż 100 g. Przepis B (2 porcje): kurczak 300 g, cebula 1 szt. Zaplanuj oba na 2 porcje w tym tygodniu → Zakupy → „Generuj z planu” → bieżący tydzień | **Kurczak 500 g, Cebula 1 szt., Ryż 100 g**. Kurczak występuje tylko raz | |
-| TC-23 | Porcje w generowaniu | Zmień liczbę porcji zaplanowanego przepisu A na 4 → otwórz Zakupy | Kurczak 700 g, Ryż 200 g; komunikat „Lista zakupów została zaktualizowana…” | |
-| TC-24 | Normalizacja jednostek | Przepis z 500 g mąki i drugi z 1 kg mąki, oba zaplanowane → generuj | Mąka 1,5 kg | |
-| TC-25 | Brak posiłków w zakresie | Generuj dla pustego tygodnia | „Brak zaplanowanych posiłków między …”; lista się nie zmienia | |
-| TC-26 | Automatyczna aktualizacja | Dodaj, zmień lub usuń zaplanowany posiłek w zakresie listy → otwórz Zakupy | Produkty wygenerowane odpowiadają planowi; produkty ręczne pozostają bez zmian | |
-| TC-27 | Zachowanie oznaczenia „kupione” | Zaznacz Ryż; zmień posiłek, który nie zawiera ryżu → otwórz Zakupy | Ryż pozostaje zaznaczony; zmienione produkty są odznaczone | |
+| TC-22 | **Przykład ze specyfikacji** | Przepis A (2 porcje): kurczak 200 g, ryż 100 g. Przepis B (2 porcje): kurczak 300 g, cebula 1 szt. Zaplanuj oba na 2 porcje w tym tygodniu → Zakupy → „Generuj z planu” → bieżący tydzień | **Kurczak 500 g, Cebula 1 szt., Ryż 100 g**. Kurczak występuje tylko raz | ✅ |
+| TC-23 | Porcje w generowaniu | Zmień liczbę porcji zaplanowanego przepisu A na 4 → otwórz Zakupy | Kurczak 700 g, Ryż 200 g; komunikat „Lista zakupów została zaktualizowana…” | ✅ |
+| TC-24 | Normalizacja jednostek | Przepis z 500 g mąki i drugi z 1 kg mąki, oba zaplanowane → generuj | Mąka 1,5 kg | ✅ |
+| TC-25 | Brak posiłków w zakresie | Generuj dla pustego tygodnia | „Brak zaplanowanych posiłków między …”; lista się nie zmienia | ✅ |
+| TC-26 | Automatyczna aktualizacja | Dodaj, zmień lub usuń zaplanowany posiłek w zakresie listy → otwórz Zakupy | Produkty wygenerowane odpowiadają planowi; produkty ręczne pozostają bez zmian | ✅ |
+| TC-27 | Zachowanie oznaczenia „kupione” | Zaznacz Ryż; zmień posiłek, który nie zawiera ryżu → otwórz Zakupy | Ryż pozostaje zaznaczony; zmienione produkty są odznaczone | ✅ |
 
 ### Lista zakupów – zarządzanie ręczne
 
 | ID | Scenariusz | Kroki | Oczekiwany rezultat | Wynik |
 |---|---|---|---|---|
-| TC-28 | Dodanie produktu | + → „Chleb” (bez ilości) → Zapisz; + → „Mleko 1 l”, kategoria Nabiał i jajka | Oba produkty widoczne z opisem „dodany ręcznie”; Mleko w grupie „Nabiał i jajka” | |
-| TC-29 | Walidacja produktu | Ilość bez jednostki; jednostka bez ilości; pusta nazwa | Komunikaty błędów; okno pozostaje otwarte | |
-| TC-30 | Edycja produktu | Dotknij produktu → zmień ilość / kategorię → Zapisz | Lista pokazuje nowe wartości i grupowanie | |
-| TC-31 | Usunięcie i cofnięcie | Ikona usuwania → Cofnij | Produkt znika i wraca | |
-| TC-32 | Kupione | Zaznacz produkt | Przekreślony, wyszarzony, przeniesiony na koniec swojej grupy | |
-| TC-33 | Usunięcie kupionych | „Usuń kupione” → potwierdź | Wszystkie kupione produkty zostają usunięte | |
-| TC-34 | Zapamiętane kategorie | Nadaj wygenerowanemu produktowi kategorię → wygeneruj ponownie | Produkt zachowuje kategorię | |
+| TC-28 | Dodanie produktu | + → „Chleb” (bez ilości) → Zapisz; + → „Mleko 1 l”, kategoria Nabiał i jajka | Oba produkty widoczne z opisem „dodany ręcznie”; Mleko w grupie „Nabiał i jajka” | ✅ |
+| TC-29 | Walidacja produktu | Ilość bez jednostki; jednostka bez ilości; pusta nazwa | Komunikaty błędów; okno pozostaje otwarte | ✅ |
+| TC-30 | Edycja produktu | Dotknij produktu → zmień ilość / kategorię → Zapisz | Lista pokazuje nowe wartości i grupowanie | ✅ |
+| TC-31 | Usunięcie i cofnięcie | Ikona usuwania → Cofnij | Produkt znika i wraca | ✅ |
+| TC-32 | Kupione | Zaznacz produkt | Przekreślony, wyszarzony, przeniesiony na koniec swojej grupy | ✅ |
+| TC-33 | Usunięcie kupionych | „Usuń kupione” → potwierdź | Wszystkie kupione produkty zostają usunięte | ✅ |
+| TC-34 | Zapamiętane kategorie | Nadaj wygenerowanemu produktowi kategorię → wygeneruj ponownie | Produkt zachowuje kategorię | ✅ |
 
 ### Wymagania niefunkcjonalne
 
 | ID | Scenariusz | Kroki | Oczekiwany rezultat | Wynik |
 |---|---|---|---|---|
-| TC-35 | Praca offline | Wyłącz Wi-Fi i dane komórkowe; dodaj przepis; włącz ponownie sieć | Widoczny komunikat o braku połączenia; przepis widoczny od razu i zsynchronizowany później | |
-| TC-36 | Język | Ustawienia → Polski | Wszystkie teksty po polsku, jednostka „szt.”, polskie formy liczby mnogiej; ustawienie zachowane po ponownym uruchomieniu | |
-| TC-37 | Motyw | Ustawienia → Ciemny / Jasny / Zgodny z systemem | Motyw zmienia się od razu i jest zachowany po ponownym uruchomieniu | |
-| TC-38 | Obrót ekranu | Obróć telefon na każdym ekranie | Brak awarii; wprowadzone dane są zachowane | |
-| TC-39 | Reguły bezpieczeństwa | W konsoli Firebase (Rules Playground) odczytaj `users/<inny uid>/recipes` jako inny użytkownik | Odmowa dostępu | |
+| TC-35 | Praca offline | Wyłącz Wi-Fi i dane komórkowe; dodaj przepis; włącz ponownie sieć | Widoczny komunikat o braku połączenia; przepis widoczny od razu i zsynchronizowany później | ✅ |
+| TC-36 | Język | Ustawienia → Polski | Wszystkie teksty po polsku, jednostka „szt.”, polskie formy liczby mnogiej; ustawienie zachowane po ponownym uruchomieniu | ✅ |
+| TC-37 | Motyw | Ustawienia → Ciemny / Jasny / Zgodny z systemem | Motyw zmienia się od razu i jest zachowany po ponownym uruchomieniu | ✅ |
+| TC-38 | Obrót ekranu | Obróć telefon na każdym ekranie | Brak awarii; wprowadzone dane są zachowane | ✅ |
+| TC-39 | Reguły bezpieczeństwa | W konsoli Firebase (Rules Playground) odczytaj `users/<inny uid>/recipes` jako inny użytkownik | Odmowa dostępu | ✅ |
 
 ---
 
